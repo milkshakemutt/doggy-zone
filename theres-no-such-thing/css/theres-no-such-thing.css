@@ -1,0 +1,47 @@
+body {
+	background-image: url('../img/bg.gif');
+	background-repeat: repeat;
+}
+
+#speech {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 380px;
+}
+
+#dog {
+	position: absolute;
+	right: 10%;
+	bottom: 5%;
+}
+
+#sound-button {
+	background-image: url('../img/mute.png');
+}
+
+#sound-button.play {
+	background-image: url('../img/play.png');
+}
+
+/* high-resolution images */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	   only screen and (min-resolution: 2dppx) {
+	#dog {
+		background-image: url('../img/dog-of-the-wired-2x.png');
+		background-size: 100%;
+	}
+
+	#dog img {
+		opacity: 0;
+	}
+
+	#sound-button {
+		background-image: url('../img/mute-2x.png');
+		background-size: auto 100%;
+	}
+
+	#sound-button.play {
+		background-image: url('../img/play-2x.png');
+	}
+}
