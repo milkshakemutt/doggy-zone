@@ -1,6 +1,9 @@
-body {
+html {
 	background-image: url('../img/bg.gif');
 	background-repeat: repeat;
+	font: 14px georgia;
+	color: #c4f0be;
+	letter-spacing: 0.5em;
 }
 
 #speech {
