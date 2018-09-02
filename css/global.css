@@ -30,7 +30,7 @@ a:hover {
  */
 
 .hero {
-  font: 5rem sabbath-black georgia;
+  font: 5rem sabbath-black, georgia;
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ a:hover {
 .directory {
   margin: 0 auto;
   position: relative;
-  font: 1.5rem sabbath-black georgia;
+  font: 1.5rem sabbath-black, georgia;
   width: 30%;
 }
 
