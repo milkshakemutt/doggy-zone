@@ -42,6 +42,7 @@ a:hover {
   margin: 0 auto;
   position: relative;
   font: 1.5rem sabbath-black, georgia;
+  letter-spacing: 0.15em;
   width: 30%;
 }
 
