@@ -8,6 +8,16 @@
   }
 }
 
+@keyframes dim {
+  0% {
+    opacity: 0.85;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   background: #291119;
   font: 16px georgia;
@@ -98,6 +108,19 @@ a:hover {
   color: #d33;
 }
 
+/**
+ * Comic styles
+ */
+
+.comic-page {
+  margin: 5vh auto;
+  max-width: 85%;
+}
+
+.comic-page > img {
+  max-width: 100%;
+}
+
 /*
  * Default styles
  */
@@ -124,4 +147,12 @@ a:hover {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: steps(4, start);
+}
+
+.dim-animation {
+  animation-name: dim;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }

@@ -1,0 +1,19 @@
+#speech {
+  margin: 3vh 0 0 20%;
+  display: inline-block;
+}
+
+#sound-button {
+  top: 20px;
+  bottom: auto;
+  font-size: 2rem;
+  opacity: 0.75;
+}
+
+#sound-button::before {
+	content:  '\1F507';
+}
+
+#sound-button.play::before {
+	content: '\1F508';
+}
