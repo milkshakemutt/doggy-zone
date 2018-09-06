@@ -1,5 +1,5 @@
 html {
-	background-image: url('../img/bg.gif');
+	background-image: url('/img/theres-no-such-thing/bg.gif');
 	background-repeat: repeat;
 	font: 14px georgia;
 	color: #c4f0be;
@@ -20,18 +20,18 @@ html {
 }
 
 #sound-button {
-	background-image: url('../img/mute.png');
+	background-image: url('/img/theres-no-such-thing/mute.png');
 }
 
 #sound-button.play {
-	background-image: url('../img/play.png');
+	background-image: url('/img/theres-no-such-thing/play.png');
 }
 
 /* high-resolution images */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 	   only screen and (min-resolution: 2dppx) {
 	#dog {
-		background-image: url('../img/dog-of-the-wired-2x.png');
+		background-image: url('/img/theres-no-such-thing/dog-of-the-wired-2x.png');
 		background-size: 100%;
 	}
 
@@ -40,11 +40,11 @@ html {
 	}
 
 	#sound-button {
-		background-image: url('../img/mute-2x.png');
+		background-image: url('/img/theres-no-such-thing/mute-2x.png');
 		background-size: auto 100%;
 	}
 
 	#sound-button.play {
-		background-image: url('../img/play-2x.png');
+		background-image: url('/img/theres-no-such-thing/play-2x.png');
 	}
 }

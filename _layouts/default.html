@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{ page.title }}</title>
+
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ckn6xuu.css">
+  {% if page.customCss %}
+    <link rel="stylesheet" href="/css/custom/{{ page.customCss }}.css">
+  {% endif %}
+</head>
+<body>
+  {{ content }}
+
+  {% if page.youtubeAudio %}
+    <iframe
+      width="0"
+      height="0"
+      frameborder="0"
+      id="audio-frame"
+      src="https://www.youtube.com/embed/{{ page.youtubeAudio }}?autoplay=1&loop=1&enablejsapi=1">
+    </iframe>
+
+    <span id="sound-button"></span>
+
+    <script src="/js/global.js"></script>
+  {% endif %}
+</body>
+</html>

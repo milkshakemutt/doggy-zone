@@ -1,2 +1,15 @@
-#### L a y e r &nbsp; 0 1
-[t h e r e ' s &nbsp; n o &nbsp; s u c h &nbsp; t h i n g](https://hundvalp.github.io/dog-of-the-wired/theres-no-such-thing.html)
+# d o g &nbsp;o f &nbsp;t h e &nbsp;w i r e d
+
+## develop
+
+```
+docker pull jekyll/jekyll
+docker run --rm --volume="$PWD:/srv/jekyll" -p4000:4000 -it jekyll/jekyll jekyll serve
+```
+
+## deploy
+
+```
+docker run --rm --volume="$PWD:/srv/jekyll" -p4000:4000 -it jekyll/jekyll jekyll build
+rsync -azP -e 'ssh -i ~/.ssh/digitalocean_rsa' --delete _site/ doggyzone
+```
