@@ -3,11 +3,11 @@ var DogOfTheWired = (function() {
 
   var soundButton = document.getElementById("sound-button");
   var audioFrame = document.getElementById("audio-frame");
-  var isAudioPlaying = true;
+  var isAudioPlaying = false;
 
   /**
    * Toggles the global play/pause status of an embedded Youtube iframe with an id of #audio-frame.
-   * Sets a class of .mute or .play on an element with id #sound-button, if available.
+   * Sets a class of .pause on an element with id #sound-button, if available.
    */
   function toggleAudio() {
     var command;
@@ -25,9 +25,9 @@ var DogOfTheWired = (function() {
     // Update the class on #sound-button, if available
     if (null !== soundButton) {
       if (isAudioPlaying) {
-        soundButton.className = 'mute';
+        soundButton.classList.add('pause');
       } else {
-        soundButton.className = 'play';
+        soundButton.classList.remove('pause');
       }
     }
   }

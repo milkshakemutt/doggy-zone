@@ -20,11 +20,9 @@ html {
 }
 
 #sound-button {
-	background-image: url('/img/theres-no-such-thing/mute.png');
-}
-
-#sound-button.play {
-	background-image: url('/img/theres-no-such-thing/play.png');
+  border-color: #c4f0be;
+  position: absolute;
+  left: 0;
 }
 
 /* high-resolution images */
@@ -37,14 +35,5 @@ html {
 
 	#dog img {
 		opacity: 0;
-	}
-
-	#sound-button {
-		background-image: url('/img/theres-no-such-thing/mute-2x.png');
-		background-size: auto 100%;
-	}
-
-	#sound-button.play {
-		background-image: url('/img/theres-no-such-thing/play-2x.png');
 	}
 }

@@ -156,13 +156,32 @@ a:hover {
 
 #sound-button {
   background-repeat: no-repeat;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+  border-color: #fff;
   display: block;
   cursor: pointer;
-  width: 32px;
-  height: 18px;
+}
+
+#sound-button::before {
+  border: 16px solid transparent;
+  border-color: inherit;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right-color: transparent;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+#sound-button.pause::before {
+  border: 6px solid transparent;
+  border-color: inherit;
+  border-top: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 20px;
 }
 
 /*
