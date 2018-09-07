@@ -1,4 +1,4 @@
-# d o g &nbsp;o f &nbsp;t h e &nbsp;w i r e d
+# ワイヤードの犬
 
 ## develop
 

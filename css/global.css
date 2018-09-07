@@ -18,9 +18,19 @@
   }
 }
 
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px;
+  }
+
+  100% {
+    text-shadow: 0 0 15px;
+  }
+}
+
 html {
   background: #291119;
-  font: 16px georgia;
+  font: 16px 'adobe garamond pro', georgia;
   color: #f1f2ed;
 }
 
@@ -44,24 +54,42 @@ a:hover {
  */
 
 .hero {
-  font: 5rem sabbath-black, georgia;
+  animation-name: text-glow;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(4, start);
+  margin-bottom: 2.5rem;
+  font: 5rem ro-brush-std, vdl-terag, 'adobe garamond pro', georgia;
   text-align: center;
+  text-shadow: 0 0 15px;
+  color: #cee0b1;
 }
 
 .hero-subheading {
   margin-bottom: 4.5rem;
-  font: 1.5rem sabbath-black, georgia;
+  font: 1rem ro-brush-std, vdl-terag, georgia;
   text-align: center;
-}
-
-.hero-subheading::after {
-  content: '\2619';
-  display: block;
-  text-align: center;
+  font-weight: 100;
 }
 
 .hero + .hero-subheading {
   margin-top: -2rem;
+}
+
+/**
+ * Quote styles
+ */
+
+.quote {
+  display: inline-block;
+  text-align: left;
+  padding-left: 4ex;
+}
+
+.quote-attribution {
+  display: block;
+  padding-left: 4ex;
 }
 
 /**
@@ -71,7 +99,7 @@ a:hover {
 .directory {
   margin: 0 auto;
   position: relative;
-  font: 1.5rem sabbath-black, georgia;
+  font: 1.5rem sabbath-black, 'adobe garamond pro', georgia;
   letter-spacing: 0.15em;
   width: 30%;
 }
@@ -96,8 +124,9 @@ a:hover {
 }
 
 .directory-tag {
-  font-family: georgia;
+  font-family: 'adobe garamond pro', georgia;
   font-size: 0.5em;
+  letter-spacing: 0.25ex;
 }
 
 /**
