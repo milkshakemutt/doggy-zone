@@ -7,9 +7,8 @@ customCss: theres-no-such-thing
 youtubeAudio: X-7FuZB8JQw
 ---
 
-{:#speech}
-there's no such thing as black orchids  
-&emsp;&emsp;&mdash;lilys
+{:.quote}
+there's no such thing as black orchids<span class="quote-attribution">&mdash;lilys</span>
 
 {:#dog .pixel-float-animation}
 ![if you're lost, look out for what may find you](/img/theres-no-such-thing/dog-of-the-wired.png)
