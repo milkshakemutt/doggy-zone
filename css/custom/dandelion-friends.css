@@ -1,0 +1,13 @@
+html {
+  background: url('/img/dandelion-friends/carrot-dance.gif');
+  background-repeat: repeat;
+  background-size: 150px;
+}
+
+h1 {
+  background: #fff;
+  border-radius: 100px;
+  font-family: ro-brush-std, vdl-terag, 'adobe garamond pro', georgia;
+  text-align: center;
+  color: #ff9900;
+}
