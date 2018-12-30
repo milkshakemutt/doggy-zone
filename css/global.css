@@ -30,7 +30,7 @@
 
 html {
   background: #291119;
-  font: 16px 'adobe garamond pro', georgia;
+  font: 16px georgia;
   color: #f1f2ed;
 }
 
@@ -54,27 +54,41 @@ a:hover {
  */
 
 .hero {
+  margin: -2rem auto 4.5rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-heading {
   animation-name: text-glow;
   animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: steps(4, start);
   margin-bottom: 2.5rem;
-  font: 5rem ro-brush-std, vdl-terag, 'adobe garamond pro', georgia;
+  display: inline-block;
+  font: 5rem memoriam-headline-pro, cursive;
   text-align: center;
   text-shadow: 0 0 15px;
   color: #cee0b1;
 }
 
-.hero-subheading {
-  margin-bottom: 4.5rem;
-  font: 1rem ro-brush-std, vdl-terag, georgia;
-  text-align: center;
-  font-weight: 100;
+.hero-heading::before {
+  content: 'the';
+  font-size: 1rem;
+  position: relative;
+  top: -5rem;
 }
 
-.hero + .hero-subheading {
-  margin-top: -2rem;
+.hero-subheading {
+  font: 1rem poynter-oldstyle-display, adobe-garamond-pro, georgia, serif;
+  font-style: italic;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  font-weight: 100;
 }
 
 /**
@@ -99,8 +113,7 @@ a:hover {
 .directory {
   margin: 0 auto;
   position: relative;
-  font: 1.5rem sabbath-black, 'adobe garamond pro', georgia;
-  letter-spacing: 0.15em;
+  font: 1.5rem poynter-oldstyle-display, adobe-garamond-pro, georgia, serif;
   width: 30%;
 }
 
@@ -109,6 +122,7 @@ a:hover {
   padding-right: 20px;
   transform: translateX(-100%);
   position: absolute;
+  font-family: memoriam-headline-pro, cursive;
   font-size: 1em;
   font-weight: normal;
 }
@@ -116,6 +130,7 @@ a:hover {
 .directory-listing {
   margin: 0;
   padding: 0;
+  font-family: memoriam-headline-pro, cursive;
   list-style: none;
 }
 
@@ -128,9 +143,9 @@ a:hover {
 }
 
 .directory-tag {
-  font-family: 'adobe garamond pro', georgia;
-  font-size: 0.5em;
-  letter-spacing: 0.25ex;
+  font-family: poynter-oldstyle-display, adobe-garamond-pro, georgia, serif;
+  font-size: 0.6em;
+  font-style: italic;
 }
 
 .directory-tag::after {

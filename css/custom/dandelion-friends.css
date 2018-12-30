@@ -7,7 +7,8 @@ html {
 h1 {
   background: #fff;
   border-radius: 100px;
-  font-family: ro-brush-std, vdl-terag, 'adobe garamond pro', georgia;
+  font-family: houschka-rounded, helvetica, arial, sans-serif;
+  font-weight: 800;
   text-align: center;
   color: #ff9900;
 }
