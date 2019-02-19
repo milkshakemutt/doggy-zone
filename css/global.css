@@ -178,6 +178,25 @@ a:hover {
   max-width: 100%;
 }
 
+/**
+ * PIP video styles
+ */
+
+.pip-video {
+  border: 6px solid #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  max-width: 20vw;
+}
+
+.pip-video > iframe {
+  display: block;
+  width: 100%;
+  height: 56.25%;
+}
+
 /*
  * Default styles
  */
