@@ -1,0 +1,118 @@
+/* referenced from http://pajasevi.github.io/CSSnowflakes/ */
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowflakes-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+html, body {
+  background: #fff;
+}
+
+.merry-christmas-artwork {
+  margin: 7.5vh auto;
+  text-align: center;
+  max-width: 85%;
+}
+
+.merry-christmas-artwork > img {
+  max-height: 80vh;
+  max-width: 100%;
+}
+
+.snowflake::before {
+  content: '❅';
+  color: rgba(255,255,255,0.95);
+  display: block;
+  font-size: 3rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.2);
+  position: fixed;
+  top: -10%;
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+}
+
+.snowflake:nth-of-type(0)::before::before {
+  left: 1%;
+  animation-delay: 0s, 0s;
+}
+
+.snowflake:nth-of-type(1)::before {
+  left: 10%;
+  animation-delay: 1s, 1s;
+}
+
+.snowflake:nth-of-type(2)::before {
+  left: 20%;
+  animation-delay: 6s, .5s;
+}
+
+.snowflake:nth-of-type(3)::before {
+  left: 30%;
+  animation-delay: 4s, 2s;
+}
+
+.snowflake:nth-of-type(4)::before {
+  left: 40%;
+  animation-delay: 2s, 2s;
+}
+
+.snowflake:nth-of-type(5)::before {
+  left: 50%;
+  animation-delay: 8s, 3s;
+}
+
+.snowflake:nth-of-type(6)::before {
+  left: 60%;
+  animation-delay: 6s, 2s;
+}
+
+.snowflake:nth-of-type(7)::before {
+  left: 70%;
+  animation-delay: 2.5s, 1s;
+}
+
+.snowflake:nth-of-type(8)::before {
+  left: 80%;
+  animation-delay: 1s, 0s;
+}
+
+.snowflake:nth-of-type(9)::before {
+  left: 90%;
+  animation-delay: 3s, 1.5s;
+}
+
+.snowflake:nth-of-type(10)::before {
+  left: 25%;
+  animation-delay: 2s, 0s;
+}
+
+.snowflake:nth-of-type(11)::before {
+  left: 65%;
+  animation-delay: 4s, 2.5s;
+}
+
