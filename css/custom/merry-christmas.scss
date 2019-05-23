@@ -1,3 +1,13 @@
+---
+---
+
+@import 'global-colors';
+$color-background: #fff;
+$color-text: #9f66c9;
+
+@import 'global-fonts';
+@import 'global';
+
 /* referenced from http://pajasevi.github.io/CSSnowflakes/ */
 
 @keyframes snowflakes-fall {
@@ -20,19 +30,15 @@
   }
 }
 
-html, body {
-  background: #fff;
-}
-
 .merry-christmas-artwork {
   margin: 7.5vh auto;
   text-align: center;
   max-width: 85%;
-}
 
-.merry-christmas-artwork > img {
-  max-height: 80vh;
-  max-width: 100%;
+  img {
+    max-height: 80vh;
+    max-width: 100%;
+  }
 }
 
 .snowflake::before {

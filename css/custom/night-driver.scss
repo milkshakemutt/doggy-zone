@@ -1,10 +1,18 @@
+---
+---
+
+@import 'global-colors';
+$color-text: #fff;
+
+@import 'global-fonts';
+@import 'global';
+
 .quote {
   margin: 3vh 0 0 20%;
   position: relative;
 }
 
 #sound-button {
-  border-color: #fff;
   position: absolute;
   left: 0;
   opacity: 0.75;

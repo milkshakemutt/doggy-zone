@@ -33,7 +33,7 @@ layout: default
       {% if art.tags or art.cw %}
         <section class="directory-tags">
           {% for cw in art.cw %}
-            <span class="directory-tag cw">{{ cw }}</span>
+            <span class="directory-tag cw">cw: {{ cw }}</span>
           {% endfor %}
           {% for tag in art.tags %}
             <span class="directory-tag">{{ tag }}</span>

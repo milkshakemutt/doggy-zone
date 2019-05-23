@@ -1,0 +1,50 @@
+nav {
+  a {
+    color: $color-text;
+
+    &:visited {
+      color: $color-text;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: [next] 50fr [home] auto [prev] 50fr;
+    grid-template-rows: 1fr;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      font-style: italic;
+
+      .cw {
+        font-size: 0.8rem;
+        position: absolute;
+        bottom: 0.75rem;
+        right: auto;
+      }
+    }
+  }
+}
+
+.nav-next {
+  grid-area: next;
+  justify-content: flex-end;
+}
+
+.nav-home {
+  margin: 0 1rem;
+  grid-area: home;
+  place-self: center;
+  font: 2rem $font-display;
+}
+
+.nav-previous {
+  grid-area: prev;
+  justify-content: flex-start;
+}

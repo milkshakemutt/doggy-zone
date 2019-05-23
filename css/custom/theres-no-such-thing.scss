@@ -1,14 +1,22 @@
+---
+---
+
+@import 'global-colors';
+$color-text: #c4f0be;
+
+@import 'global-fonts';
+@import 'global';
+
 html {
 	background-image: url('/img/theres-no-such-thing/bg.gif');
 	background-repeat: repeat;
-	font: 14px georgia;
-	color: #c4f0be;
+	font-size: 14px;
 	letter-spacing: 0.5em;
 }
 
 .quote {
 	position: absolute;
-	top: 5%;
+	top: 10%;
 	left: 10%;
 	width: 380px;
 }
@@ -20,7 +28,6 @@ html {
 }
 
 #sound-button {
-  border-color: #c4f0be;
   position: absolute;
   left: 0;
 }

@@ -1,0 +1,37 @@
+.hero {
+  margin: -2rem auto 4.5rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-heading {
+  animation-name: text-glow;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(4, start);
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  font: 5rem memoriam-headline-pro, cursive;
+  text-align: center;
+  text-shadow: 0 0 15px;
+  color: #cee0b1;
+
+  &::before {
+    content: 'the';
+    font-size: 1rem;
+    position: relative;
+    top: -5rem;
+  }
+}
+
+.hero-subheading {
+  font: 1rem poynter-oldstyle-display, adobe-garamond-pro, georgia, serif;
+  font-style: italic;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+  font-weight: 100;
+}

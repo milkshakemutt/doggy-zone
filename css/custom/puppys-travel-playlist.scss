@@ -1,0 +1,19 @@
+---
+---
+
+@import 'global-colors';
+@import 'global-fonts';
+
+$color-background: #fcfcfc;
+$color-text: #224;
+
+@import 'global';
+
+.quote {
+  position: relative;
+}
+
+#sound-button {
+  position: absolute;
+  left: 1ex;
+}

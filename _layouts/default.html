@@ -6,12 +6,49 @@
   <title>{{ page.title }}</title>
 
   <link rel="stylesheet" href="https://use.typekit.net/mek8avk.css">
-  <link rel="stylesheet" href="/css/global.css">
   {% if page.customCss %}
     <link rel="stylesheet" href="/css/custom/{{ page.customCss }}.css">
+  {% else %}
+    <link rel="stylesheet" href="/css/global.css">
   {% endif %}
 </head>
 <body>
+  {% if page.url != '/' %}
+    <nav>
+      <ul>
+        {% if page.next %}
+          <li class="nav-next">
+            <a href="{{ page.next.url }}">newer</a>
+
+            {% if page.next.cw %}
+              <span class="cw">
+                {% for cw in page.next.cw %}
+                  cw: {{ cw }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              </span>
+            {% endif %}
+          </li>
+        {% endif %}
+
+        <li class="nav-home"><a href="/">doggy zone</a></li>
+
+        {% if page.previous %}
+          <li class="nav-previous">
+            <a href="{{ page.previous.url }}">older</a>
+
+            {% if page.previous.cw %}
+              <span class="cw">
+                {% for cw in page.previous.cw %}
+                  cw: {{ cw }}{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+              </span>
+            {% endif %}
+          </li>
+        {% endif %}
+      </ul>
+    </nav>
+  {% endif %}
+
   {{ content }}
 
   {% if page.youtubeAudio %}

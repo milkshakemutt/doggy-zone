@@ -2,3 +2,5 @@ permalink: pretty
 collections:
   art:
     output: true
+sass:
+  style: compressed
